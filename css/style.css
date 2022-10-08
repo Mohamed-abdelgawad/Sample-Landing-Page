@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.container {
+  background-color: #000;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+header .logo {
+  width: 40px;
+}
+header ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+header ul li a:hover {
+    color: #777;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+/* End of Header  */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+main .text {
+  width: 40%;
+  color: rgba(255, 255, 255, 0.699);
+}
+main .text h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+main .text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+main .text a {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: .4s;
+}
+main .text a:hover {
+    background-color: #777;
+}
+main .image {
+  width: 30%;
+}
+main .image img {
+  max-width: 100%;
+}
+/* End of Main */
+.icons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icons img {
+  max-width: 80px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icons img:hover {
+  transform: scale(1.5);
+}
+footer {
+  width: 100%;
+  background-color: 777;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  header {
+    font-size: 10px;
+  }
+  main .text h2 {
+    font-size: 1.3rem;
+  }
+  main .text p {
+    line-height: 1.2;
+  }
+  .icons img {
+    max-width: 50px;
+  }
+}
+@media (max-width: 767px) {
+    header {
+      font-size: 10px;
+    }
+    main .text {
+        width: 65%;
+        overflow: hidden;
+    }
+    main .text h2 {
+      font-size: 1.3rem;
+    }
+    main .text p {
+      line-height: 1.2;
+      max-height: 230px;
+      
+    }
+    .icons img {
+      width: 50px;
+    }
+    main .text a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+  }
+  
